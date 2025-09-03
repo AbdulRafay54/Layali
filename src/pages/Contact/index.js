@@ -17,11 +17,12 @@ export default function Contact() {
         <div className="w-full flex justify-center">
           <div className="w-full sm:w-[900px] h-[90vh] bg-gradient-to-r from-[#2b1b14] via-[#3e2723] to-[#2b1b14] rounded-2xl shadow-2xl border border-gray-200 p-6">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe57q7FL61XIW2Qt0xj23CqpVxi45XPE8hF4PO3WhHmMBPVnQ/viewform?embedded=true"
-              className="w-full h-full rounded-lg"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSctwUre8d2TNTUsc2OjJA1P5zGETLI1HCE5nqZ8FaKMszUraQ/viewform?embedded=true"
+              width="830"
+              height="820"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
             >
               Loading…
             </iframe>
