@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
-import Navbar from "./Navbar/pages";
+import Navbar from "./Navbar";
 import Head from "next/head";
+import Footer from "./Footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
       <div>
         <Component {...pageProps} />
       </div>
+      <Footer/>
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#2c1810]/70 via-[#2c1810]/80 to-[#1a0e08]/90"></div>
         <div className="relative z-10 text-center space-y-4 px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide text-yellow-400 drop-shadow-md">
-            About <span className="text-white">Layali</span>
+            About <span className="text-white">Layali Chocolates</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200 leading-relaxed">
             Crafting moments of indulgence with every bite of luxury.
@@ -34,7 +34,7 @@ export default function AboutPage() {
           new standard of indulgence is born.
         </p>
         <p className="text-gray-600 leading-relaxed text-lg md:text-xl">
-          Welcome to <span className="font-semibold text-[#4A2C2A]">Layali Chocolate</span>, 
+          Welcome to <span className="font-semibold text-[#4A2C2A]">Layali Chocolates</span>, 
           a brand where the art of chocolate is redefined with sophistication 
           and joy. Layali isn’t just about chocolate; it’s about moments of pure
           delight. Handcrafted with passion, our filled chocolate bars are
@@ -47,7 +47,7 @@ export default function AboutPage() {
         <p className="text-xl italic text-gray-200 max-w-3xl mx-auto px-6">
           “Luxury is in the details, and every bite tells our story.”
         </p>
-        <p className="mt-4 font-semibold text-yellow-400">— Layali Chocolates</p>
+        <p className="mt-4 font-semibold text-yellow-400"> Layali Chocolates</p>
       </section>
     </main>
   );

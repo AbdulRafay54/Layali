@@ -40,10 +40,10 @@ export default function Navbar() {
           <nav className="hidden md:flex justify-center w-full bg-[#2b1b14]">
             <ul className="flex space-x-12 text-lg font-semibold text-yellow-400 py-5 tracking-wide">
               <li><Link href="/" className="hover:text-white transition">Home</Link></li>
-              <li><Link href="./About/pages" className="hover:text-white transition">About</Link></li>
-              <li><Link href="/products" className="hover:text-white transition">Products</Link></li>
-              <li><Link href="/reviews" className="hover:text-white transition">Reviews</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition">Contact</Link></li>
+              <li><Link href="./About" className="hover:text-white transition">About</Link></li>
+              <li><Link href="./Products" className="hover:text-white transition">Products</Link></li>
+              <li><Link href="./FAQs" className="hover:text-white transition">FAQs</Link></li>
+              <li><Link href="./Contact" className="hover:text-white transition">Contact</Link></li>
             </ul>
           </nav>
 
@@ -101,10 +101,10 @@ export default function Navbar() {
             </button>
 
             <Link href="/" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">Home</Link>
-            <Link href="./About/pages" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">About</Link>
-            <Link href="/products" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">Products</Link>
-            <Link href="/reviews" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">Reviews</Link>
-            <Link href="/contact" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">Contact</Link>
+            <Link href="./About" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">About</Link>
+            <Link href="./Products" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">Products</Link>
+            <Link href="./FAQs" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">FAQs</Link>
+            <Link href="./Contact" onClick={() => setIsOpen(false)} className="block text-lg hover:text-white">Contact</Link>
           </div>
         </div>
       )}

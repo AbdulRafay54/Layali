@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar/pages'
-import HeroCarousel from './Hero/pages'
-import ProductsPage from './Products/pages'
-import Reviews from './Review/pages'
+import Navbar from './Navbar'
+import HeroCarousel from './Hero'
+import ProductsPage from './Products'
+import Reviews from './Review'
 
 const index = () => {
   return (
