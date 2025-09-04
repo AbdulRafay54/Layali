@@ -64,7 +64,9 @@ export default function Reviews() {
                 <div className="flex-1 bg-gray-200 h-2 rounded overflow-hidden">
                   <div
                     className="bg-[#795548] h-2"
-                    style={{ width: `${stars === 5 ? 90 : stars === 4 ? 6 : 1}%` }}
+                    style={{
+                      width: `${stars === 5 ? 90 : stars === 4 ? 6 : 1}%`,
+                    }}
                   />
                 </div>
                 <span className="text-sm text-gray-600">
@@ -77,7 +79,10 @@ export default function Reviews() {
           {/* Right button */}
           <button
             onClick={() =>
-              window.open("https://forms.gle/your-google-form-link", "_blank")
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSeE8FVlwBgzhK976l7d3lwICQNpQ-GW_60cHWuUhis_GNjOUw/viewform?usp=header",
+                "_blank"
+              )
             }
             className="bg-[#4e342e] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3e2723] transition"
           >

@@ -11,7 +11,7 @@ const products = [
     id: 1,
     image: "/images/darkkunafa.jpg",
     name: "Dark Chocolate Kunafa Delight",
-    price: "Rs 850",
+    price: "Rs 889",
     reviews: 38,
     rating: 4,
     description:
@@ -21,7 +21,7 @@ const products = [
     id: 2,
     image: "/images/kunafabar.jpeg",
     name: "Milk Chocolate Kunafa Bliss",
-    price: "Rs 850",
+    price: "Rs 889",
     reviews: 76,
     rating: 5,
     description:
@@ -31,7 +31,7 @@ const products = [
     id: 3,
     image: "/images/whitekunafa.jpeg",
     name: "White Chocolate Kunafa Luxury",
-    price: "Rs 850",
+    price: "Rs 889",
     oldPrice: "Rs 900",
     reviews: 58,
     rating: 5,
@@ -42,7 +42,7 @@ const products = [
     id: 4,
     image: "/images/dubaikunafa.jpeg",
     name: "Pistachio Kunafa Royale (Dubai Special)",
-    price: "Rs 850",
+    price: "Rs 889",
     reviews: 93,
     rating: 5,
     description:
@@ -193,7 +193,7 @@ export default function YouMayAlsoLike() {
                 {/* Buy Now Button → WhatsApp Order */}
                 <div className="mt-8">
                   <a
-                    href={`https://wa.me/923092024577?text=Hello! I want to order *${selected.name}* for Rs. 850.`}
+                    href={`https://wa.me/923092024577?text=Hello! I want to order *${selected.name}* for Rs. 889.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center bg-gradient-to-r from-[#6D4C41] to-[#3E2723] hover:from-[#3E2723] hover:to-[#6D4C41] text-white py-3 rounded-xl font-semibold transition shadow-md"
