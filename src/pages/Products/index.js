@@ -5,13 +5,13 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
-
 const products = [
   {
     id: 1,
     image: "/images/darkkunafa.jpg",
     name: "Dark Chocolate Kunafa Delight",
-    price: "Rs 889",
+    price: 889,
+    discount: 10, // 10% discount
     reviews: 38,
     rating: 4,
     description:
@@ -21,7 +21,8 @@ const products = [
     id: 2,
     image: "/images/kunafabar.jpeg",
     name: "Milk Chocolate Kunafa Bliss",
-    price: "Rs 889",
+    price: 889,
+    discount: 10, // 10% discount
     reviews: 76,
     rating: 5,
     description:
@@ -31,7 +32,8 @@ const products = [
     id: 3,
     image: "/images/whitekunafa.jpeg",
     name: "White Chocolate Kunafa Luxury",
-    price: "Rs 889",
+    price: 889,
+    discount: 10, // 10% discount
     oldPrice: "Rs 900",
     reviews: 58,
     rating: 5,
@@ -42,7 +44,8 @@ const products = [
     id: 4,
     image: "/images/dubaikunafa.jpeg",
     name: "Pistachio Kunafa Royale (Dubai Special)",
-    price: "Rs 889",
+    price: 889,
+    discount: 10, // 10% discount
     reviews: 93,
     rating: 5,
     description:
@@ -79,8 +82,15 @@ export default function YouMayAlsoLike() {
               <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-2 line-clamp-2 text-[#3E2723]">
                 {product.name}
               </h3>
+              {/* Price with discount */}
               <p className="text-base sm:text-lg font-bold text-[#6D4C41]">
-                {product.price}
+                <span className="line-through text-gray-400 mr-2">
+                  Rs {product.price}
+                </span>
+                Rs{" "}
+                {Math.round(
+                  product.price - (product.price * product.discount) / 100
+                )}
               </p>
             </div>
           </div>
@@ -126,7 +136,7 @@ export default function YouMayAlsoLike() {
               onClick={() => setSelected(null)}
               className="absolute top-4 right-4 text-gray-600 hover:text-[#6D4C41] text-3xl"
             >
-<AiOutlineClose size={28} color="#6D4C41" />
+              <AiOutlineClose size={28} color="#6D4C41" />
             </button>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left: Product Image */}
@@ -147,9 +157,15 @@ export default function YouMayAlsoLike() {
                   {selected.name}
                 </h2>
 
-                {/* Price */}
+                {/* Price with discount */}
                 <p className="text-2xl sm:text-3xl font-bold text-[#6D4C41] mt-2">
-                  Rs. 850
+                  <span className="line-through text-gray-400 mr-3 text-lg sm:text-xl">
+                    Rs {selected.price}
+                  </span>
+                  Rs{" "}
+                  {Math.round(
+                    selected.price - (selected.price * selected.discount) / 100
+                  )}
                 </p>
 
                 {/* Rating */}
@@ -193,7 +209,7 @@ export default function YouMayAlsoLike() {
                 {/* Buy Now Button → WhatsApp Order */}
                 <div className="mt-8">
                   <a
-                    href={`https://wa.me/923092024577?text=Hello! I want to order *${selected.name}* for Rs. 889.`}
+                    href={`https://wa.me/923092024577?text=Hello! I want to order *${selected.name}* for Rs. 889 .`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center bg-gradient-to-r from-[#6D4C41] to-[#3E2723] hover:from-[#3E2723] hover:to-[#6D4C41] text-white py-3 rounded-xl font-semibold transition shadow-md"
