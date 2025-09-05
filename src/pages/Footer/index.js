@@ -54,15 +54,17 @@ export default function Footer() {
           </h3>
           <div className="flex justify-center md:justify-end gap-4 mb-4">
             <a
-              href="https://www.facebook.com/profile.php?id=61580183044690&mibextid=ZbWKwL"
-               target="_blank"
+              href="https://www.facebook.com/profile.php?id=61580183044690"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-yellow-600 text-white p-3 rounded-full hover:bg-yellow-500 transition"
             >
               <FaFacebookF size={18} />
             </a>
+
             <a
               href="https://www.instagram.com/layalichocolate?igsh=ZGUzMzM3NWJiOQ=="
-               target="_blank"
+              target="_blank"
               className="bg-yellow-600 text-white p-3 rounded-full hover:bg-yellow-500 transition"
             >
               <FaInstagram size={18} />
