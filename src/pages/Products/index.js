@@ -209,7 +209,7 @@ export default function YouMayAlsoLike() {
                 {/* Buy Now Button → WhatsApp Order */}
                 <div className="mt-8">
                   <a
-                    href={`https://wa.me/923092024577?text=Hello! I want to order *${selected.name}* for Rs. 889 .`}
+                    href={`https://wa.me/923092024577?text=Hello! I want to order *${selected.name}* for Rs. 800 .`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center bg-gradient-to-r from-[#6D4C41] to-[#3E2723] hover:from-[#3E2723] hover:to-[#6D4C41] text-white py-3 rounded-xl font-semibold transition shadow-md"
